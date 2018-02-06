@@ -1,0 +1,277 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+html, body {
+    min-height: 100vh;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.main-header,
+.main-footer {
+    flex: 0 0 auto;
+}
+.page{
+    flex: 1 0 auto;
+
+}
+a {
+    font-family: 'Bungee', cursive;
+    color: black;
+    text-decoration: none;
+}
+.logo {
+    display: block;
+    padding: 10px 0;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border-radius: 50%;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.main-header{
+    background-color: rgb(51, 51, 51);
+}
+.menu-main {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 0;
+    background-color: #333333;
+    border-style: dashed;
+}
+
+.menu-main li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-main li:after {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    content: "|";
+    color: #606060;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu-main li:last-child:after {
+    content: none;
+}
+
+.menu-main a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding: 20px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+
+.menu-main a, .menu-main a:visited {
+    color: white;
+}
+
+.menu-main a.current, .menu-main a:hover {
+    color: #feb386;
+}
+
+.menu-main a:before,
+.menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #feb386;
+    transition: .8s;
+}
+
+.menu-main a:hover:before, .menu-main .current:before {
+    left: 0;
+}
+.menu-main a:hover:after, .menu-main .current:after {
+    right: 0;
+}
+.contacts{
+    text-align: center;
+}
+.contacts a {
+    display: block;
+    margin-bottom: 10px;
+}
+.blog{
+    margin: 50px 0;
+}
+.text-center{
+    text-align: center;
+}
+.about-team{
+    text-align: center;
+}
+.about-project{
+    text-align: center;
+}
+.product-image{
+    display: block;
+    overflow: hidden;
+    height: 230px;
+
+}
+.product-image img{
+    transition: all 1s ease-out;
+
+}
+.product-image:hover img{
+    transform: scale(1.2)    
+}
+
+.welcome {
+    letter-spacing: 5px;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: lightgrey;
+}
+.welcome h1{
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+}
+.product{
+    padding: 15px 0;
+}
+.blog-content{
+    padding: 15px 0;
+}
+.hr {
+    text-align: right;
+    background-color: grey;
+}
+.content {
+    padding: 20px;
+}
+.scots{
+    padding: 15px 0;
+}
+.burma{
+    padding: 15px 0;
+}
+.persians{
+    padding: 15px 0;
+}
+.more{
+    text-decoration: none;
+    color: #333333;
+}
+.container {
+	margin: auto;
+    width: 1000px;
+    padding: 0 15px;
+}
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after{
+    clear: both;
+}
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+.container:after{
+    clear: both;
+}
+.column{
+	float: left;
+	box-sizing: border-box;
+	padding: 0 15px;
+}
+.column-33{
+   width: 33.3333%; 
+}
+.column-50{
+    width: 50%;
+}
+.main-footer{
+    background-color: #333333
+}
+.footer-content p{
+    float: right;
+    display: inline;
+    color: #ffffff;
+}
+.social-icons{
+    float: left;
+    margin: 16px;
+}
+.social-icons a{
+    color: #ffffff;
+    padding: 7px;
+    transition: 1s;
+}
+.social-icons a:hover{
+    color: #feb386;
+}
+.features{
+    margin-top: 20px;
+}
+.about-content{
+    width: 250px;
+    margin: auto;
+    margin: 40px auto;
+}
+.pager {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin: 20px 0;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.benefits-header{
+    text-align: center;
+    margin-top: 50px;
+    line-height: 60px;
+}
+.pager li {
+    display: inline;
+}
+
+@media (max-width: 550px) {
+    .menu-main {
+        padding-top: 0;
+    }
+
+    .menu-main li {
+        display: block;
+    }
+
+    .menu-main li:after {
+        content: none;
+    }
+
+    .menu-main a {
+        padding: 25px 0 20px;
+        margin: 0 30px;
+    }
+}
